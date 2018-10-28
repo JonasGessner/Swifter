@@ -12,7 +12,6 @@ import Foundation
 /// swift-corelibs-foundation. These are exactly the same API as in
 /// https://github.com/apple/swift-corelibs-foundation/blob/master/Foundation/NSScanner.swift
 extension Scanner {
-    #if os(macOS) || os(iOS)
     func scanString(string: String) -> String? {
         var buffer: NSString?
         scanString(string, into: &buffer)
@@ -23,7 +22,6 @@ extension Scanner {
         scanUpTo(string, into: &buffer)
         return buffer as String?
     }
-    #endif
 
     #if os(Linux)
     var isAtEnd: Bool {
