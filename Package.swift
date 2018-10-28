@@ -4,10 +4,10 @@ import PackageDescription
 
 let package = Package(
     name: "Swifter",
-    path: "Sources",
     targets: [
         .target(
-            name: "Swifter"
+            name: "Swifter",
+            path: "Sources"
         ),
     ],
     swiftLanguageVersions: [.v4_2]
