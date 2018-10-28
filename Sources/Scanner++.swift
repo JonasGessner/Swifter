@@ -18,7 +18,7 @@ extension Scanner {
         _ = scanString(string, into: &buffer)
         return buffer
     }
-    #elif os(iOS) || os(macOS)
+    #elseif os(iOS) || os(macOS)
     func scanString(string: String) -> String? {
         var buffer: NSString?
         _ = scanString(string, into: &buffer)
