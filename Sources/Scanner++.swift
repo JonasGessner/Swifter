@@ -14,9 +14,9 @@ import Foundation
 extension Scanner {
     #if os(Linux) || os(iOS) || os(macOS)
     func scanString(string: String) -> String? {
-        var buffer: NSString?
+        var buffer: String?
         scanString(string, into: &buffer)
-        return buffer as String?
+        return buffer
     }
     #endif
     #if os(iOS) || os(macOS)
