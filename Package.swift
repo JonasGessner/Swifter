@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "Swifter",
+    path: "Sources",
     targets: [
         .target(
             name: "Swifter"
