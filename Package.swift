@@ -4,6 +4,9 @@ import PackageDescription
 
 let package = Package(
     name: "Swifter",
+    products: [
+        .library(name: "Swifter", targets: ["Swifter"]),
+    ],
     targets: [
         .target(
             name: "Swifter",
